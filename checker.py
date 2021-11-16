@@ -57,8 +57,8 @@ while True:
         #f.close() this was for mass scraping
         if res.text == "Error 53":
             print(Fore.WHITE + "[" + Fore.MAGENTA + "+" + Fore.WHITE + "]" + Fore.MAGENTA + user.strip() + " Available")
-            f = open("available" + ".txt", "w")
-            f.write(user.strip())
+            f = open("available" + ".txt", "a")
+            f.write(user.strip() + "\n")
             f.close()
         else:
             print(Fore.WHITE + "[" + Fore.RED + "-" + Fore.WHITE + "]" + Fore.RED + user.strip() + " Not Available")
