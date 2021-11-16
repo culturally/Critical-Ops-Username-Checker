@@ -28,11 +28,11 @@ r = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=ht
 scrape = open('proxies.txt', 'wb')
 scrape.write(r.content)
 scrape = open("proxies.txt", "r")
-proxy = random.choice(open('proxies.txt').readlines())
 scrape.close
-proxies = {
-        'http': 'http://' + proxy}
 while True:
+    proxy = random.choice(open('proxies.txt').readlines())
+    proxies = {
+        'http': 'http://' + proxy}
     file = open('user.txt', 'r')
     for user in file:
         
