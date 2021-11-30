@@ -64,5 +64,4 @@ while True:
             print(Fore.WHITE + "[" + Fore.RED + "-" + Fore.WHITE + "]" + Fore.RED + user.strip() + " Not Available")
             
 file.close
-#note from Timer1337: "play stupid games win stupid prizes :)
 #by yin/who?/timer/kevin
